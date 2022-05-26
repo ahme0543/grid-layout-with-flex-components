@@ -8,25 +8,29 @@ body {
   
   .emoji {
     /* display: grid; */
-    display: flex;
+    display: flex; 
+   /*  flex-wrap: wrap; */
+    
     flex-direction: column;
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
-    margin: 10px; 
+    margin: 10px;  
     justify-content: space-evenly;
     
    
   }
 
   .emojis {
-    display: grid;
+    /* width: 900px;
+    height: 600px; */
+    display: grid; 
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "box1  box2"
     "box3  box4";
-    justify-content: space-evenly;
     grid-template-rows: 1fr 1fr;
+    gap: 10px;
 
   }
   
@@ -51,6 +55,7 @@ body {
   .emoji h2 {
     margin: 0;
     border-bottom: 2px solid #ccc;
+    text-align: left;
     
   }
   
@@ -58,17 +63,22 @@ body {
     text-decoration: none;
     background-color: #781BAA;
     color: white;
-    padding: 1rem; 
+    text-decoration: none;
+    padding: 1rem;
     border-radius: 8px;
-    width: auto;
+    /* width: auto; */
   }
   
   .icon {
+    /* font-size: 4rem;
+    align-self: center;
+    order: -1; */
+
     display: flex;
     flex-direction: row;
     font-size: 4rem;
     order: -1;
-    justify-content: center;
+    justify-content: center; 
   }
 
   
